@@ -8,21 +8,34 @@
 	<link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
+	
 	<header >
 		<figure class="logo">
-			<img src="img/logo.png" alt="Logo Dispoll HyC" title="Dispoll HyC" />
+			<a href="index.html">
+				<img src="img/logo.png" alt="Logo Dispoll HyC" title="Dispoll HyC" />
+			</a>
 		</figure>
-		<nav>
+		<nav id="nav">
 			<ul>
 				<li><a href="#">Promoción</a></li>
-				<li><a href="#">Productos</a></li>
+				<li><a href="productos.html">Productos</a></li>
 				<li><a href="#">Recetas</a></li>
-				<li><a href="#">Contáctanos</a></li>
-				<li class="login"><a href="#">Ingresar</a></li>
+				<li><a href="contactanos.html">Contáctanos</a></li>
+				<li ><a href="#" class="login">Ingresar</a></li>
 			</ul>
 		</nav>
 		<div class="menu"><a href="#" class="icon-menu"></a></div>
 	</header>
+	<div class="login hidden">
+		<form action="" class="formulario">
+			<input type="email" id="email" name="email" placeholder="Email" required/>
+			<input type="password" id="pass" name="password" placeholder="Contraseña" required/>
+			<input type="submit" value="enviar"/>
+			<input type="checkbox" checked/>
+			<span class="recordar">¿Recordarme?</span> <br>
+			<a href="#" class="problemas">¿Necesitas ayuda?</a>
+		</form>
+	</div>
 	<section>
 		<article class="promocion">
 			<div class="contenedor">
@@ -44,20 +57,15 @@
 		<article class="redes">
 			<div class="sociales">
 				<div class="face">
-					<div class="f">
-						<a href="#">Like</a>
+					<div class="f" >
+						<a href="#" id="fb-root">Like</a>
 					</div>
 					<div class="k">
 						<span>55k</span>
 					</div>
 				</div>
 				<div class="twitter">
-					<div class="t">
-						<a href="#">Twitter</a>
-					</div>
-					<div class="twit">
-						<span>33.4k</span>
-					</div>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
 				</div>
 				<div class="correo">
 					<a href="mailto:info@dispolhyc.com">info@dispollhyc.com</a>
@@ -77,7 +85,6 @@
 		<h2 class="receta">¡La receta del mes!</h2>
 		<section class="contenedor-receta">
 			<div class="caja-recetas">
-				
 				<article class="recetas">
 					<div class="encabezado">
 						<p class="titulo">
@@ -198,19 +205,24 @@
 				</div>
 				<div class="visitanos">
 					<span class="titulo"><strong>Visítanos</strong></span>
-					<a href="#"class="face">dispollhyc</a>
+					<a href="https://www.facebook.com/pages/DISPOLLHyC/797658963595684?fref=ts"class="face" target="_blank">dispollhyc</a>
 					<a href="#"class="twitter">@dispollhyc</a>
 				</div>
 			</div>
 			<div class="footer">
 				<p>
 					Todos los derechos reservados
-					by, <a href="mailto:info@ingenieriaweb.com.ec"><strong>IngenieriaWeb</strong></a>
+					by, <a href="http://www.ingenieriaweb.com.ec" target="_blank"><strong>IngenieriaWeb</strong></a>
+					<a href="mailto:info@ingenieriaweb.com.ec" class="mail icon-correo"></a>
 				</p>
 				<a href="#" class="mision">MISIÓN</a>
 				<a href="#" class="vision">VISIÓN</a>
 			</div>
 		</footer>
 	</section>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+ </script>
 </body>
 </html>
